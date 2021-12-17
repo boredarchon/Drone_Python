@@ -11,3 +11,7 @@
 # 결과물 영상
 
 https://user-images.githubusercontent.com/62997897/146567775-6ef3083e-8681-4758-a370-34a5048b2cf2.mp4
+
+
+# 블로그
+https://blog.naver.com/chae971012
