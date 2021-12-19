@@ -40,10 +40,10 @@ def findFace(img):
         # cv2.circle(이미지, 원의 중심, 원의 반지름, 색상bgr(0,255,0 : 초록), 선의 타입(FILLED: 안을 채워 넣음)) : 원그리기
         myFaceListC.append([cx,cy])    # append : 리스트에 요소 추가
         myFaceListArea.append(area)
-    if len(myFaceListArea) != 0:    # 면적에 아무것도 없으면
+    if len(myFaceListArea) != 0:    # 면적에 얼굴이 있으면
         i = myFaceListArea.index(max(myFaceListArea))
         return img, [myFaceListC[i], myFaceListArea[i]]
-    else:
+    else:   # 면적에 얼굴이 없다면
         return img, [[0, 0], 0]    # cx, cy, area == 0
 
 def trackFace(info, w, pid, pError):
